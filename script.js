@@ -343,3 +343,43 @@ document.querySelectorAll("img").forEach((img) => {
   });
 
 });
+
+
+
+async function loadWebsites() {
+  try {
+    const res = await fetch("https://obaidwebdev.github.io/sites.json");
+    const data = await res.json();
+
+    const container = document.querySelector(".website-list");
+
+    data.websites.forEach(site => {
+
+      // Current website ko skip karo
+      if (site.url.replace(/\/$/, "") === location.origin.replace(/\/$/, "")) return;
+
+      const card = document.createElement("a");
+      card.href = site.url;
+      card.target = "_blank";
+      card.rel = "noopener noreferrer";
+
+      card.className = "website-card";
+
+      card.innerHTML = `
+                <img src="${site.favicon || site.url + '/favicon.ico'}"
+                     alt="${site.title}"
+                     loading="lazy"
+                     onerror="this.src='favicon.ico'">
+
+                <span>${site.title}</span>
+            `;
+
+      container.appendChild(card);
+    });
+
+  } catch (err) {
+    console.error("Site list failed:", err);
+  }
+}
+
+loadWebsites();
