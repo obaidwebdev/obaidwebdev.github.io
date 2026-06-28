@@ -19,6 +19,11 @@
       "title": "Obaid Workspaces",
       "url": "https://obaidworkspaces.vercel.app/",
       "favicon": "http://obaidworkspaces.vercel.app/images/favicon.ico"
+    },
+    {
+      "title": "Obaid Stack",
+      "url": "https://obaidstack.vercel.app/",
+      "favicon": "https://obaidstack.vercel.app/favicon.ico"
     }
   ]
 }
