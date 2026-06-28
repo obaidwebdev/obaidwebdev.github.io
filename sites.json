@@ -1,9 +1,14 @@
 {
   "websites": [
     {
-      "title": "Obaid Web Developer",
+      "title": "Obaid Khan Web",
       "url": "https://obaidwebdev.github.io",
       "favicon": "https://obaidwebdev.github.io/favicon.ico"
+    },
+    {
+      "title": "Obaid Web Developer",
+      "url": "https://obaidwebdev-pk.rf.gd/",
+      "favicon": "https://obaidwebdev-pk.rf.gd/favicons/android-chrome-192x192.png"
     }
   ]
 }
