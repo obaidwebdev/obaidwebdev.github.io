@@ -14,6 +14,11 @@
       "title": "Obaid Portfolio",
       "url": "https://obaid-portfolio-five.vercel.app/",
       "favicon": "https://obaid-portfolio-five.vercel.app/images/logo.ico"
+    },
+    {
+      "title": "Obaid Workspaces",
+      "url": "https://obaidworkspaces.vercel.app/",
+      "favicon": "http://obaidworkspaces.vercel.app/images/favicon.ico"
     }
   ]
 }
